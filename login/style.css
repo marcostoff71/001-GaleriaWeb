@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+
+}
+.contraseña{
+    position: absolute;
+    padding: 5px;
+    bottom: 5px;
+    color: #29d0fd;
+    text-decoration: none;
+}
+.contraseña:hover{
+   color: #2ecc71;
+   text-decoration: underline;
+}
+.registrar{
+    position: absolute;
+    left: 40px;
+    text-decoration:none;
+    color: #29d0fd;
+}
+.registrar:hover{
+    color:#2ecc71 ;
+    text-decoration: underline;
+}
+.main-menu{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 20px;
+    
+
+}
+
+.main-menu__item{
+    
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.main-menu__active[type = "text"],
+.main-menu__active[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:  2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    height: 45px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.main-menu__active[type = "text"]:focus,
+.main-menu__active[type = "password"]:focus{
+    width: 220px;
+    border-color: #2ecc71;
+}
+
+.main-menu__link[type= "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:  2px solid #0ae67f;
+    padding: 14px 40px;
+    height: 45px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+.main-menu__link[type= "submit"]:hover{
+    background: #2ecc71 ;
+    filter: blur(0.2px);
+    box-shadow: 
+    0 0 10px #2ecc71,
+    0 0 20px #2ecc71,
+    0 0 50px #2ecc71;
+}
